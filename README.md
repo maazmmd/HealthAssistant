@@ -11,4 +11,3 @@ OR
 ```
 $$ npm start
 ```
-#### Recorded video link https://www.youtube.com/watch?v=gzZ52IoP0Wk
