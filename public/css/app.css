@@ -92,7 +92,7 @@ a{
 
 
 .ubuntu-text{
-  color:#e95420;
+  color:#F08080;
 }
 
 .tagContainer{
@@ -103,7 +103,7 @@ a{
 }
 
 .bookmarkTag{
-  border: 1px solid #E95420;
+  border: 1px solid #F08080;
   padding: 3px 7px;
   vertical-align: middle;
   display: inline-block;
@@ -137,7 +137,7 @@ a{
 }
 
 .tagOuter{
-  border: 1px solid #E95420;
+  border: 1px solid #F08080;
   padding: 3px 7px;
   vertical-align: middle;
   text-align: center;

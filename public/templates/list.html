@@ -11,10 +11,9 @@
     <table ng-controller="SearchController" class="table table-hover table-striped table-bordered bookmark-list">
       <thead >
         <tr >
-          <th class="column-width">Bookmark</th>
-          <th >Description</th>
-          <th >Link</th>
-          <th >Tags</th>
+          <th >Prescription</th>
+          <th >Medicine/Drug</th>
+          <th >Patient</th>
           <th >Time
              <span ng-click="changeOrder('created_at');" class="icon-arrow-up sorting-icon"></span>
              <span ng-click="changeOrder('-created_at');" class="icon-arrow-down sorting-icon"></span>
@@ -25,7 +24,6 @@
 
        <tbody>
          <tr>
-           <th><input ng-disabled="true" class="form-control" type="text"/></th>
            <th><input ng-model="search.description" class="form-control" type="text"/></th>
            <th><input ng-model="search.link" class="form-control" type="text"/></th>
            <th><input ng-model="search.tags" class="form-control" type="text"/></th>

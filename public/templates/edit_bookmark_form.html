@@ -3,21 +3,21 @@
 </div>
 <br/>
 <div class="form-group" >
-<label class="col-sm-2 control-label">Link</label >
+<label class="col-sm-2 control-label">Medicine</label >
 <div class="col-sm-10" >
 <input type="text" take-focus class="form-control" name="link" ng-model="editBookmark.link" required />
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Description</label >
+<label class="col-sm-2 control-label">Prescription</label >
 <div class="col-sm-10" >
 <input type="text" class="form-control" name="description" ng-model="editBookmark.description"  />
 </div>
 </div>
 
 <div class="form-group" >
-<label class="col-sm-2 control-label">Tags</label >
+<label class="col-sm-2 control-label">Patient</label >
 <div class="col-sm-10" >
    <div class="tagContainer">
           <div ng-repeat="tag in editBookmark.inputTags" class="bookmarkTag">
@@ -25,10 +25,10 @@
                  <span class="removeTag" ng-click="removeEditTag(tag);">&times;</span>
           </div>
           <input id="editBookmarkTagsInput" class="tag-input-field" type="text" ng-show="showEditTagField"
-                 placeholder="Tag your bookmark" ng-model="editTagText.input" />
+                 placeholder="Search Patient" ng-model="editTagText.input" />
    </div>
    <div class="tagNote">
-   <span class="ubuntu-text">Note : At least one tag, Maximum 8 tags </span>
+   <span class="ubuntu-text">Note : Select a patient </span>
    </div>
 </div>
 </div>
@@ -44,11 +44,11 @@
 
 <div>
 
-<span><a ng-click="showCreateEditTagModal();">Create a new tag</a></span>
+<span><a ng-click="showCreateEditTagModal();">Register as a new Patient</a></span>
 <div class="modal-footer">
        <button type="button" class="btn btn-default" ng-click="cancelUpdate();">Cancel</button>
        <button type="button"  ng-click="updateBookmark(editBookmark);"
-           class="btn btn-primary">Update Bookmark </button >
+           class="btn btn-primary">Update</button >
      </div>
 
 </div>

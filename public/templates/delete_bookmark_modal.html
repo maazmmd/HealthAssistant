@@ -4,19 +4,19 @@
       <div class="modal-content">
         <div class="modal-header">
            <button class="close" ng-click="deleteBookmarkModal.hide()" type="button">x</button>
-           <h4 class="modal-title">Delete Bookmark</h4>
+           <h4 class="modal-title">Delete</h4>
         </div>
         <div class="modal-body">
           <form class="form-horizontal">
-             <span class="ubuntu-text bold-font">Are you sure you want to delete this bookmark?</span>
+             <span class="ubuntu-text bold-font">Are you sure you want to delete?</span>
              <div class="delete-bookmark">
-             <p><span class="delete-bookmark-heading">Bookmark Description</span><br/>
+             <p><span class="delete-bookmark-heading">Prescription</span><br/>
                {{bookmarkToDelete.description}}
              </p>
-             <p><span class="delete-bookmark-heading">Bookmark Link </span><br/>
+             <p><span class="delete-bookmark-heading">Medicine</span><br/>
                {{bookmarkToDelete.link}}
              </p>
-             <p><span class="delete-bookmark-heading">Bookmark Tags </span><br/>
+             <p><span class="delete-bookmark-heading">Patient</span><br/>
                {{bookmarkToDelete.tags}}
              </p>
            </div>
@@ -26,7 +26,7 @@
         <div class="modal-footer">
                <button type="button" class="btn btn-default" ng-click="$hide()">Cancel</button>
                <button type="button" ng-click="deleteBookmark(bookmarkToDelete._id);"
-                   class="btn btn-primary">Delete Bookmark </button >
+                   class="btn btn-primary">Delete</button >
         </div>
 
       </div>
