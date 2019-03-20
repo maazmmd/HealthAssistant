@@ -54,7 +54,7 @@ appControllers.controller('EditController',function(TagService,$scope,BookmarkSe
        var request_body={"link":bookmark.link,"description":bookmark.description,"tags":comma_separated_tags};
        BookmarkService.updateBookmark($stateParams.id,request_body)
        .then(function(response){
-               toaster.pop('success','Bookmark updated successfully');
+               toaster.pop('success','Record updated successfully');
                setTimeout(function(){$state.go('list');},2000);
             },
             function(error){ console.log("Error while updating bookmark"); }

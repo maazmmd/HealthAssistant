@@ -24,7 +24,7 @@ appService.service('Helpers',function(){
                             return day+"-"+month+"-"+year;
                           } ,
         'checkTagName' : function(tagName){
-                            if(/^[a-zA-Z-]+$/.test(tagName)){
+                            if(/^[a-zA-Z0-9-]+$/.test(tagName)){
                                 console.log("Tag Name Valid");
                                 return true;
                               }else{

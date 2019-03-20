@@ -11,7 +11,7 @@
     <table ng-controller="SearchController" class="table table-hover table-striped table-bordered bookmark-list">
       <thead >
         <tr >
-          <th >Prescription</th>
+          <th >Indications</th>
           <th >Medicine/Drug</th>
           <th >Patient</th>
           <th >Time
@@ -31,7 +31,6 @@
            <th><input ng-disabled="true" class="form-control" type="text"/></th>
          </tr>
            <tr class="active " ng-repeat="bm in bookmarks | filter:searchBookmarks | orderBy:sortOrder.order">
-             <td><a target="_blank" href="{{bm.link}}">Open</a></td>
              <td>{{bm.description}}</td>
              <td>{{bm.link}}</td>
              <td>{{bm.tags}}</td>

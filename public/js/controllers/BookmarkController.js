@@ -53,7 +53,7 @@ appControllers.controller('BookmarkController',function(BookmarkService,TagServi
 
      BookmarkService.createBookmark(post_body)
      .then(function(response){
-             toaster.pop('success','Bookmark created successfully');
+             toaster.pop('success','Record created successfully');
              setTimeout(function(){$scope.bookmarkModal.hide();$scope.showBookmarks();},2000);
           },
           function(error){console.log("Error while creating bookmark"); }
@@ -64,7 +64,7 @@ appControllers.controller('BookmarkController',function(BookmarkService,TagServi
       BookmarkService.deleteBookmark(_id)
          .then(function(response){
                 $scope.deleteBookmarkModal.hide();
-                toaster.pop("success","Bookmark deleted successfully");
+                toaster.pop("success","Record deleted successfully");
                 setTimeout(function(){$scope.showBookmarks();},2000);
               });
    }
