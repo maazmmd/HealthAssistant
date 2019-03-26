@@ -10,6 +10,10 @@
   font-size: 10px;
 }
 
+.patient{
+  color: #F08080; 
+  font-weight: bold;
+}
 
 .tagline{
   display: flex;

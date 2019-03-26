@@ -11,11 +11,11 @@ appControllers.controller('BookmarkController',function(BookmarkService,TagServi
     $scope.loadTags=function(){
       TagService.getTags()
         .then(function(response){
-                      $scope.tags=response.data.map(function(element){
-                                        if($scope.bookmark.inputTags.indexOf(element.tag)==-1){
-                                          return element.tag;
-                                        }
-                                      }).sort();
+              $scope.tags=response.data.map(function(element){
+                if($scope.bookmark.inputTags.indexOf(element.tag)==-1){
+                  return element.tag;
+                }
+              }).sort();
             });
      }
     $scope.loadTags();
@@ -28,25 +28,30 @@ appControllers.controller('BookmarkController',function(BookmarkService,TagServi
 
   $scope.selectTag=function(tag){
     $scope.bookmark.inputTags.push(tag); $scope.tags.splice($scope.tags.indexOf(tag),1)
-    $scope.tags.sort(); $scope.tagText.input=null;
-    if($scope.bookmark.inputTags.length >= 8){$scope.showInputTagField=false;}
+    $scope.tags.sort(); 
+    $scope.tagText.input=null;
+    if($scope.bookmark.inputTags.length >= 0){
+      $scope.showInputTagField=false;
+    }
     focus('bookmarkTagsInput');
   }
 
   $scope.removeTag=function(tag){
-    console.log("Removing Tag "+tag);
+    console.log("Removing Patient "+tag);
     $scope.bookmark.inputTags.splice($scope.bookmark.inputTags.indexOf(tag),1);
     $scope.tags.push(tag);
     $scope.tags.sort();
-    if($scope.bookmark.inputTags.length < 8){$scope.showInputTagField=true;}
+    if($scope.bookmark.inputTags.length < 1){
+      $scope.showInputTagField=true;
+    }
     focus('bookmarkTagsInput');
   }
 
   $scope.createBookmark=function(bookmark){
     $scope.bookmarkMessage=null;
-     if(Helpers.undefined_or_empty(bookmark.link)){$scope.bookmarkMessage='Nay! looks like you forgot bookmark link'; return;}
-     if(Helpers.undefined_or_empty(bookmark.description)){$scope.bookmarkMessage='Please fill in bookmark description'; return;}
-     if(bookmark.inputTags.length < 1){$scope.bookmarkMessage='Nay! we need at least one tag for bookmark'; return;}
+     if(Helpers.undefined_or_empty(bookmark.link)){$scope.bookmarkMessage='Nay! looks like you forgot to enter Medicine'; return;}
+     if(Helpers.undefined_or_empty(bookmark.description)){$scope.bookmarkMessage='Please fill in Indications'; return;}
+     if(bookmark.inputTags.length < 1){$scope.bookmarkMessage='Nay! we need at least one one Patient'; return;}
      var comma_separated_tags=Helpers.commaSeparatedTags(bookmark.inputTags);
      var post_body={"link":bookmark.link,"description":bookmark.description,"tags":comma_separated_tags,
                        "created_at":Date.now().toString(),"created_by":Storage.getUsername()};
@@ -56,7 +61,7 @@ appControllers.controller('BookmarkController',function(BookmarkService,TagServi
              toaster.pop('success','Record created successfully');
              setTimeout(function(){$scope.bookmarkModal.hide();$scope.showBookmarks();},2000);
           },
-          function(error){console.log("Error while creating bookmark"); }
+          function(error){console.log("Error while creating record"); }
         );
   }
 

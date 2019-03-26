@@ -25,10 +25,10 @@ appService.service('Helpers',function(){
                           } ,
         'checkTagName' : function(tagName){
                             if(/^[a-zA-Z0-9-]+$/.test(tagName)){
-                                console.log("Tag Name Valid");
+                                console.log("Patient Name Valid");
                                 return true;
                               }else{
-                                console.log("Tag Name Invalid");
+                                console.log("Patient Name Invalid");
                                 return false;
                               }
                             },
