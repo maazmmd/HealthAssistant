@@ -38,18 +38,20 @@ $$ npm start
 #### Application will be running on port 8080
 
 ## Email Configuration
-Connect to Internet (Good if no firewall settings are enabled)
+Connect to Internet (Good if no firewall settings are enabled)  
 
-1. XML File Path (Email Configurations) should be changed in emailClient.js
-2. All the paths and other necessary fields inside Email Confuration should be changed.
-   a. SMTP Server address, port, username, address
-   b. If sending via gmail (Configure your Gmail account to send emails) Link below
-   https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server
+1. XML File Path (Email Configurations) should be changed in emailClient.js  
+2. All the paths and other necessary fields inside Email Confuration should be changed.  
+   a. SMTP Server address, port, username, address  
+   b. If sending via gmail (Configure your Gmail account to send emails) Link below  
+   https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server  
    
-   Make sure you follow above steps along with below steps (Most impoerant else your email will not be sent)
-   a. Goto Google Account (Privacy) Security in the below u will find allow less secure apps (Select YES/ON)
+   Make sure you follow above steps along with below steps (Most impoerant else your email will not be sent)  
+   a. Goto Google Account (Privacy) Security in the below u will find allow less secure apps (Select YES/ON)  
    
-   Common Inputs for gmail
-   <smtpServer>smtp.gmail.com</smtpServer>
-		<port>465</port>
-		<authentication>true</authentication>
+Common Inputs for gmail  
+```
+<smtpServer>smtp.gmail.com</smtpServer>  
+<port>465</port>  
+<authentication>true</authentication>
+```
