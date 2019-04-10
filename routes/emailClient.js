@@ -41,6 +41,9 @@ module.exports = {
 
         // Fetch e-Mail Body from Html Body Template
         let HTMLStr = fs.readFileSync(path.join(configDetails.imageProcessingPath, configDetails.emailBodyTemplateFileName), "utf8");
+        HTMLStr = HTMLStr.replace("medxxxstr", details.body.link);
+        HTMLStr = HTMLStr.replace("indixxxstr", details.body.description);
+        HTMLStr = HTMLStr.replace("namexxxstr", details.body.tags);
         configDetails.Body = HTMLStr;
 
         let attachment = {filename: configDetails.attachmentFileName, path: configDetails.attachmentPath + `/` + configDetails.attachmentFileName};

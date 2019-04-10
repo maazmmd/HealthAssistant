@@ -3,13 +3,13 @@
 		<smtpServer>smtp.gmail.com</smtpServer>
 		<port>465</port>
 		<authentication>true</authentication>
-		<userName>Enter Your gmail Email Address Here</userName>
-		<password>Enter your gmail password</password>
+		<userName>learn4survival@gmail.com</userName>
+		<password>Addu559*</password>
         <!-- Path should be configured Accordingly -- Root Directory is NodeMail  -->
         <emailBodyImagesPath>/Users/mohammedmaaz/Documents/Project-WorkSpace/HealthAssistant/email</emailBodyImagesPath>
         <attachmentPath>/Users/mohammedmaaz/Documents/Project-WorkSpace/HealthAssistant/email</attachmentPath>
         <attachmentFileName>Report.pdf</attachmentFileName>
-		<emailBodyTemplateFileName>emailBodyTemplate.html</emailBodyTemplateFileName>
+		<emailBodyTemplateFileName>index.html</emailBodyTemplateFileName>
         <fromEmailAddress>learn4survival@gmail.com</fromEmailAddress>
         <emailSubject>Health Assist : Receipt </emailSubject>
         <!-- Wait for 1 Seconds after sending each email / 1 second is represented as 1000 milliSec-->
