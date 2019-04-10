@@ -23,7 +23,7 @@ $$ npm install
 ### In server.js (Inside models folder) Change your DB URI Eg. var dbURI = 'mongodb://localhost/test';
 ```
 $$ show dbs;
-$$ use test; // Create and use test Database via MongoShell
+$$ use test; // Create and use test Database via MongoShell and configure the same in server.js
 
 $$ sudo mongod  // Running Mongo on Mac OSX
 $$ sudo mongo   
