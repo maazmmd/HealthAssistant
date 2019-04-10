@@ -113,6 +113,10 @@ appService.service('BookmarkService',function($http,CONSTANT,Storage){
      return $http.delete('/bookmark/'+_id);
    };
 
+   this.sendEmail = function(bookmark){
+       return $http.post('/bookmarkEmail',bookmark,{headers:{"Content-Type":"application/json"}});
+   };
+
    this.updateBookmark = function(_id,bookmark){
      return $http.put('/bookmark/'+_id,bookmark,{headers:{"Content-Type":"application/json"}});
    }

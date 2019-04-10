@@ -47,5 +47,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/edit-bookmark.html',
             controller:'EditController',
             authenticate: true
+        })
+        .state('email', {
+            url: '/email/:id',
+            templateUrl: 'templates/email-bookmark.html',
+            controller:'EmailController',
+            authenticate: true
         });
 });
