@@ -3,6 +3,9 @@ Node JS V6
 MongoDB
 Node Packages - Bower (Install Globally)
 
+##### Installation - Nodejs
+McFarland, D. 2014. How to Install Node.js and NPM on a Mac. Available: http://blog.teamtree-house.com/install-node-js-npm-mac. 
+
 ```
 $$ node -v
 v6.17.0
