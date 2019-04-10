@@ -55,3 +55,14 @@ Common Inputs for gmail
 <port>465</port>  
 <authentication>true</authentication>
 ```
+
+#### References
+MongoDB, Inc. 2008. Documents. Available: https://docs.mongodb.com/manual/core/document. 
+Sending an email in Node JS – https://nodemailer.com/about/
+Auth0, Inc. 2015. What is JSON Web Token? Available: https://jwt.io/introduction. 
+
+##### Contact 
+Mohammed Maaz, Student ID : 0877744
+e: mmoham10@lakeheadu.ca
+
+
