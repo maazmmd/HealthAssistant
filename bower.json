@@ -1,9 +1,9 @@
 {
   "name": "linko",
-  "description": "Dont lose your bookmarks again",
+  "description": "Dont lose your prescription again",
   "main": "server.js",
   "authors": [
-    "Mahtab Alam"
+    "Mohammed Maaz"
   ],
   "license": "MIT",
   "moduleType": [],
