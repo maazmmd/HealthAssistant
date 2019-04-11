@@ -16,7 +16,7 @@ $$ npm install -g bower // Install bower globally
 ```
 ### Clone the Repo and follow other commands 
 ```
-$$ git clone url
+$$ git clone https://github.com/maazmmd/HealthAssistant.git
 $$ bower install 
 $$ npm install
 ```
