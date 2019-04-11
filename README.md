@@ -20,17 +20,20 @@ $$ git clone url
 $$ bower install 
 $$ npm install
 ```
-### In server.js (Inside models folder) Change your DB URI Eg. var dbURI = 'mongodb://localhost/test';
+### In db.js (Inside models folder) Change your DB URI or database name cretaed.  
+Eg. var dbURI = 'mongodb://localhost/test';
 ```
 $$ show dbs;
-$$ use test; // Create and use test Database via MongoShell and configure the same in server.js
-
-$$ sudo mongod  // Running Mongo on Mac OSX
-$$ sudo mongo   
+$$ use test; // Create and use test Database via MongoShell and configure the same in server.js   
 ```
 
 ### Make sure MongoDB Server is already running before running the application 
-### Then run 
+```
+$$ sudo mongod  // Running Mongo on Mac OSX
+$$ sudo mongo
+```
+
+### Then finally run the aplication
 ```
 $$ node server.js
 ```
@@ -39,6 +42,10 @@ OR
 $$ npm start
 ```
 #### Application will be running on port 8080
+Open the browser
+Type the URL
+http://localhost:8080/
+
 
 ## Email Configuration
 Connect to Internet (Good if no firewall settings are enabled)  
