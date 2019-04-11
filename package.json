@@ -1,12 +1,12 @@
 {
-  "name": "linko",
+  "name": "HealhAssist",
   "version": "1.0.0",
-  "description": "Dont lose your bookmarks again",
+  "description": "Dont lose your prescriptions again",
   "main": "server.js",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
   },
-  "author": "Mahtab Alam",
+  "author": "Mohammed Maaz",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^1.0.1",
