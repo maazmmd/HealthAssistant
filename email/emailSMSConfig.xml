@@ -14,7 +14,7 @@
         <emailSubject>Health Assist : Receipt </emailSubject>
         <!-- Wait for 1 Seconds after sending each email / 1 second is represented as 1000 milliSec-->
         <waitingPeriod>1000</waitingPeriod>
-        <CC>mmoham10@lakeheadu.ca</CC>
+        <CC>amoham26@lakeheadu.ca</CC>
 	</mailConfiguration>
 	
 	<!-- Below is the SMS Configuration -->
