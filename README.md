@@ -29,7 +29,7 @@ $$ npm install -g bower // Install bower globally
 ```
 ### Clone the Repo and follow other commands 
 ```
-$$ git clone https://github.com/mmoham10-0877744/HealthAssist.git
+$$ git clone https://github.com/maazmmd/HealthAssistant.git
 $$ cd HealthAssist
 $$ bower install 
 $$ npm install
@@ -63,13 +63,15 @@ Type the URL http://localhost:8080/
 ## Email Configuration
 Connect to Internet (Good if no firewall settings are enabled)  
 
-1. XML File Path (Email Configurations) should be changed in emailClient.js  
-2. All the paths and other necessary fields inside Email Confuration file should be changed (emailSMSConfig.xml).  
+1. XML File Path should be changed in emailClient.js  
+2. All the paths and deatils like SMTP and others inside Email Confuration xml file should be changed (email/emailSMSConfig.xml).  
    a. SMTP Server address, port, username, address  
-   b. If sending via gmail (Configure your Gmail account to send emails via low level apps or from other application) [Link](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server ) 
+   b. Sending email via gmail (Configure your Gmail account to send emails by turning On low level apps from other application) [Link](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server ) 
+   - gmail -> Settings -> Forwarding POP/IMAP -> Select enable IMAP 
+   - Goto Google Account (Privacy) Security in the below u will find allow less secure apps (Select YES/ON)   
+   gmail -> google account -> security (scrool down) -> Turn on low level access for apps
    
-   Make sure you follow above steps along with below steps (Most impoerant else your email will not be sent)  
-   a. Goto Google Account (Privacy) Security in the below u will find allow less secure apps (Select YES/ON)  
+   Make sure you follow above steps (Most important else your email will not be sent via gmail SMTP)  
    
 Common Inputs for gmail  
 ```
