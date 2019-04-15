@@ -29,7 +29,8 @@ $$ npm install -g bower // Install bower globally
 ```
 ### Clone the Repo and follow other commands 
 ```
-$$ git clone https://github.com/maazmmd/HealthAssistant.git
+$$ git clone https://github.com/mmoham10-0877744/HealthAssist.git
+$$ cd HealthAssist
 $$ bower install 
 $$ npm install
 ```
@@ -37,7 +38,7 @@ $$ npm install
 Eg. var dbURI = 'mongodb://localhost/test';
 ```
 $$ show dbs;
-$$ use test; // Create and use Database (Eg. here is test) via MongoShell and configure the same in server.js   
+$$ use test; // Create and use Database (Eg. here is test) via MongoShell and configure the same in db.js   
 ```
 
 ### Make sure MongoDB Server is already running before running the application 
@@ -63,9 +64,9 @@ Type the URL http://localhost:8080/
 Connect to Internet (Good if no firewall settings are enabled)  
 
 1. XML File Path (Email Configurations) should be changed in emailClient.js  
-2. All the paths and other necessary fields inside Email Confuration should be changed.  
+2. All the paths and other necessary fields inside Email Confuration file should be changed (emailSMSConfig.xml).  
    a. SMTP Server address, port, username, address  
-   b. If sending via gmail (Configure your Gmail account to send emails) [Link](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server ) 
+   b. If sending via gmail (Configure your Gmail account to send emails via low level apps or from other application) [Link](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server ) 
    
    Make sure you follow above steps along with below steps (Most impoerant else your email will not be sent)  
    a. Goto Google Account (Privacy) Security in the below u will find allow less secure apps (Select YES/ON)  
@@ -84,6 +85,4 @@ MongoDB, Inc. 2008. Documents. Available: [Link](https://docs.mongodb.com/manual
 Sending an email in Node JS – [Link](https://nodemailer.com/about/)  
 Auth0, Inc. 2015. What is JSON Web Token? Available: [Link](https://jwt.io/introduction)  
 
-##### Contact 
-Mohammed Maaz  
-e: mmoham10@lakeheadu.ca
+
