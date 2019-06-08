@@ -1,11 +1,11 @@
 var chalk = require('chalk');
 var mongoose = require( 'mongoose' );
-var bcrypt=require('bcrypt');
+var bcrypt=require('bcryptjs');
 var SALT_WORK_FACTOR = 10;
 
 //You can either pass the DB URI as String or set it as an environment variable
 
-var dbURI = 'mongodb://localhost/test';
+var dbURI = 'mongodb://maaz:maaz123@ec2-54-89-102-22.compute-1.amazonaws.com:27017/healthassist';
 
 //var dbURI =process.env.dbURI;
 

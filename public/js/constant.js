@@ -6,7 +6,7 @@
 
 
 var appConstants=angular.module('app.constants',[])
-                        .constant('CONSTANT',{"API_URL":"http://localhost:8080"});
+                        .constant('CONSTANT',{"API_URL":"http://54.89.102.22:9000"});
 
 
 /* var appConstants=angular.module('app.constants',[])
