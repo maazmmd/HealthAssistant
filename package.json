@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Dont lose your prescriptions again",
   "main": "server.js",
+  "engines": {
+    "node": "6.17.0",
+    "npm": "3.10.10"
+  },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
   },
