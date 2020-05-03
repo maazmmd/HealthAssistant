@@ -3,7 +3,7 @@ var path = require('path');
 var sleep = require('thread-sleep');
 var fs = require('fs');
 var emailHelper = require("./emailHelper.js");
-let xml = fs.readFileSync('/Users/mohammedmaaz/Documents/Project-WorkSpace/HealthAssistant/email/emailSMSConfig.xml', "utf8");
+let xml = fs.readFileSync('/app/email/emailSMSConfig.xml', "utf8");
 //Print File as String --> console.log(xml);
 const template = {
     smtpServer: '//smtpServer',
