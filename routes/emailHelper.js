@@ -18,8 +18,8 @@ module.exports = {
         port = emailDetailsMap.port;
         authentication = emailDetailsMap.isAuth;
         imageProcessingPath = emailDetailsMap.imageProcessingPath;
-        username = emailDetailsMap.userName;
-        password = emailDetailsMap.password;
+        username = process.env.emailUsername;
+        password = process.env.emailPassword;
 
         //';' Sepearated String Value for Multiple recipients (To,Cc,Bcc)
         if(emailDetailsMap.Cc){
